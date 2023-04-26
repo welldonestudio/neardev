@@ -1,17 +1,33 @@
-@import "bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
-body, html {
+body,
+html {
   -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Pixter';
+  src: url('./assets/fonts/Pixter Display.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Pixter', sans-serif;
+  background-color: #fff;
+  color: #000;
+
 }
 
 .pointer {
   cursor: pointer;
 }
 
-.btn-success, .btn-primary {
+.btn-success,
+.btn-primary {
   .text-muted {
     color: #fff !important;
-  };
+  }
+
+  ;
 }
 
 .outline-none {
@@ -20,16 +36,18 @@ body, html {
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
+
   &.btn {
     text-decoration: none;
   }
 }
 
 .sidebar-items {
-  &> div {
+  &>div {
     border-right: 1px solid #e5e5e5;
     text-align: center;
     min-height: 4rem;
@@ -37,9 +55,213 @@ a {
     display: flex;
   }
 
-  &> div:not(.apps) {
+  &>div:not(.apps) {
     min-width: 4rem;
     align-items: center !important;
     justify-content: center !important;
   }
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px auto;
+  width: 80%
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+.chain-account-status-container {
+  display: flex;
+}
+
+.chain-account-status-left {
+  flex: 1;
+}
+
+.uniswap-ui {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.uniswap-ui h3 {
+  margin-bottom: 20px;
+}
+
+.swap-container {
+  background-color: rgb(19, 26, 42);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.from-input,
+.to-input {
+  flex: 1;
+}
+
+.input-group-text {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.form-control,
+.form-select {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.swap-btn {
+  background-color: #000000;
+  border-color: rgb(19, 26, 42);
+  width: 100%;
+  color: #ffffff;
+}
+
+.chain-account-status-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+  margin: 20px 0;
+}
+
+.chain-account-status-left {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.chain-account-status-right {
+  width: 50%;
+  margin: 30px auto;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.form-control,
+.form-select {
+  background-color: rgb(19, 26, 42);
+  color: #ffffff;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.form-control,
+.form-select {
+  background-color: rgb(19, 26, 42);
+  color: #ffffff;
+  width: 100%;
+  margin-right: 10px;
+  border: 1px solid rgb(19, 26, 42);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+}
+
+.chain-account-status-left table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ref-finance-form {
+  background-color: #262e35;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.ref-finance-form .form-control {
+  background-color: #2b3340;
+  border-color: #2b3340;
+  color: white;
+}
+
+.ref-finance-form .form-control:focus {
+  background-color: #2b3340;
+  border-color: #2b3340;
+  color: white;
+  box-shadow: none;
+}
+
+.ref-finance-form .custom-select {
+  background-color: #2b3340;
+  border-color: #2b3340;
+  color: white;
+  appearance: none;
+}
+
+.ref-finance-form .custom-select:focus {
+  background-color: #2b3340;
+  border-color: #2b3340;
+  color: white;
+  box-shadow: none;
+}
+
+.uniswap-form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #262e35;
+}
+
+.uniswap-form .form-control {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  color: #262e35;
+}
+
+.uniswap-form .form-control:focus {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  color: #262e35;
+  box-shadow: none;
+}
+
+.uniswap-form .custom-select {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  color: #262e35;
+  appearance: none;
+}
+
+.uniswap-form .custom-select:focus {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  color: #262e35;
+  box-shadow: none;
+}
+
+.uniswap-form .btn {
+  background-color: rgba(251, 17, 142, 0.12);
+  border-color: rgba(251, 17, 142, 0.12);
+  color: #262e35;
+  width: 100%
+}
+
+.uniswap-form .btn:hover {
+  background-color: rgba(251, 17, 142, 0.2);
+  border-color: rgba(251, 17, 142, 0.2);
+  color: #262e35;
 }

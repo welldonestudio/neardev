@@ -47,6 +47,9 @@ module.exports = function (env) {
         fallback: {
           crypto: require.resolve("crypto-browserify"),
           stream: require.resolve("stream-browserify"),
+          "http": false,
+          "https": false
+
         },
         // Fix for using `yarn link "near-social-vm"`
         alias: {
