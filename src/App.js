@@ -61,9 +61,9 @@ function App() {
     <div className="App">
       <Router>
         <Header active={active} setActive={setActive} error={error} setError={setError} />
-
-        {/* <Banner /> */}
-
+        <div>
+          <Banner />
+        </div>
         <div className="intro-text">
           WELLDONE Gateway is an onboarding platform for multi-chain developers. Start your multi-chain journey with minimal tools. By connecting to the WELLDONE Wallet and selecting a chain, you can access services such as Swap, Lending, Aggregator, and NFT for the respective chain.
         </div>
