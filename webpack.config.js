@@ -39,6 +39,19 @@ module.exports = function (env) {
 
           // Fonts and SVGs: Inline files
           { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: "asset/inline" },
+          {
+            test: /\.(mp4)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'videos/',
+                  publicPath: 'videos/'
+                }
+              }
+            ]
+          }
         ],
       },
       resolve: {

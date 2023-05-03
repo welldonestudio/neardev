@@ -32,10 +32,10 @@ function Header(props) {
                 <a className="nav-link" href="#">HOME</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">BUILD</a>
+                <a className="nav-link" href="https://docs.welldonestudio.io/tutorials/near/rust/near-contract" target={'_blank'}>BUILD</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">DOCUMENTATION</a>
+                <a className="nav-link" href="https://docs.welldonestudio.io/wallet/manual/how-to-create-an-account#create-an-account-in-near" target={'_blank'}>DOCUMENTATION</a>
               </li>
             </ul>
             {error && <div style={{ color: 'red', fontSize: '12px', marginRight: '10px' }}>{error}</div>}

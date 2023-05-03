@@ -9,7 +9,7 @@ function Card({ data }) {
           <p className="card-text">
             {data.description}
           </p>
-          <a href="#" className="btn btn-primary">More details</a>
+          <a href={data.link} className="btn btn-primary" target={'_blank'}>More details</a>
         </div>
       </div>
     </div>
