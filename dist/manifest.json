@@ -1,0 +1,19 @@
+{
+  "main.js": "./main.6797b11f4de1dc35f913.bundle.js",
+  "runtime.js": "./runtime.f8c35ca2758f1c6785e3.bundle.js",
+  "videos/gateway.mp4": "./videos/gateway.mp4",
+  "comingsoon.png": "./eb2f11cc99c62ac91eeb.png",
+  "logo.jpeg": "./003523b83b95d1ed1a6d.jpeg",
+  "assets/logo.png": "./assets/logo.png",
+  "assets/favicon.png": "./assets/favicon.png",
+  "favicon.png": "./favicon.png",
+  "assets/logo192.png": "./assets/logo192.png",
+  "assets/index.html": "./assets/index.html",
+  "index.html": "./index.html",
+  "assets/favicon.ico": "./assets/favicon.ico",
+  "assets/manifest.json": "./assets/manifest.json",
+  "assets/robots.txt": "./assets/robots.txt",
+  "assets/_redirects": "./assets/_redirects",
+  "assets/CNAME": "./assets/CNAME",
+  "assets/.nojekyll": "./assets/.nojekyll"
+}
