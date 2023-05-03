@@ -75,7 +75,7 @@ function App() {
         <CardList />
         <div style={{ textAlign: "center", marginBottom: "100px" }}>
           <video
-            controls
+            autoPlay
             loop
             muted
             playsInline
