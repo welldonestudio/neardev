@@ -62,6 +62,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/game" component={GamePage} />
+          <Route component={GamePage} />
           {/* Add more routes here */}
         </Switch>
       </Router>
