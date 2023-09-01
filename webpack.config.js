@@ -54,6 +54,9 @@ module.exports = function (env) {
           }
         ],
       },
+      devServer: {
+        historyApiFallback: true,
+      },
       resolve: {
         modules: [paths.srcPath, "node_modules"],
         extensions: [".js", ".jsx", ".json"],

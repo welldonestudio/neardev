@@ -11,7 +11,7 @@ function Header(props) {
     <header className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" style={{ fontWeight: 'bold', fontSize: '30px' }}>
+          <a className="navbar-brand" href="/" style={{ fontWeight: 'bold', fontSize: '30px' }}>
             <img src={logoImage} alt="WELLDONE Logo" style={{ marginRight: '10px', width: '30px', marginBottom: '5px' }} />
             WELLDONE Gateway
           </a>
@@ -29,7 +29,10 @@ function Header(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#">HOME</a>
+                <a className="nav-link" href="/">HOME</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/game">GAME</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="https://docs.welldonestudio.io/tutorials/near/rust/near-contract" target={'_blank'}>BUILD</a>
