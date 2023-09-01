@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
-import GamePage from './pages/GamePage';
 import HomePage from './pages/HomePage';
+import APIPage from './pages/APIPage';
+import GamePage from './pages/GamePage';
 
 function App() {
   const [account, setAccount] = useState('')
@@ -61,8 +62,8 @@ function App() {
         <Header active={active} setActive={setActive} error={error} setError={setError} />
         <Switch>
           <Route path="/" exact component={HomePage} />
+          <Route path="/universal-serializer" component={APIPage} />
           <Route path="/game" component={GamePage} />
-          <Route component={GamePage} />
           {/* Add more routes here */}
         </Switch>
       </Router>
