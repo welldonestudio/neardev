@@ -7509,7 +7509,7 @@ async function _bosIncrease(_id, _objectName, _address, _publickey) {
    var objectName = Pointer_stringify(_objectName);
    var account_id = Pointer_stringify(_address);
    var public_key = Pointer_stringify(_publickey);
-   var response = await fetch("http://localhost:3001/near", {
+   var response = await fetch("https://api.welldonestudio.io/universal-tx-serializer/near", {
     method: "POST",
     headers: {
      "Content-Type": "application/json"
