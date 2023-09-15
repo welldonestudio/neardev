@@ -9,7 +9,7 @@ const GamePage = () => {
       </div>
       <div className="intro-text">
         Deployed on{" "}
-         <a href="https://testnet.nearblocks.io/address/kms-test.testnet#contract">near testnet</a>
+         <a href="https://testnet.nearblocks.io/address/dsrv-kms.testnet#contract" target='_blank'>near testnet</a>
         .
       </div>
       <div style={{ margin: '30px 200px' }}>
