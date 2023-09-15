@@ -35,7 +35,10 @@ function Header(props) {
                 <a className="nav-link" href="/universal-serializer">Universal Serializer</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/game">GAME</a>
+                <a className="nav-link" href="/game-near">NEAR GAME</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/game-sui">Sui GAME</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="https://docs.welldonestudio.io/tutorials/near/rust/near-contract" target={'_blank'}>BUILD</a>

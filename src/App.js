@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import APIPage from './pages/APIPage';
-import GamePage from './pages/GamePage';
+import GameNearPage from './pages/GameNearPage';
+import GameSuiPage from './pages/GameSuiPage';
 
 function App() {
   const [account, setAccount] = useState('')
@@ -63,7 +64,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/universal-serializer" component={APIPage} />
-          <Route path="/game" component={GamePage} />
+          <Route path="/game-near" component={GameNearPage} />
+          <Route path="/game-sui" component={GameSuiPage} />
           {/* Add more routes here */}
         </Switch>
       </Router>
