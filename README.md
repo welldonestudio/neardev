@@ -1,5 +1,9 @@
 # NEAR Discovery (BOS)
 
+## Staking
+Staking page is iframe and source repo is [here](https://github.com/welldonestudio/ssv-web)
+if you depoly at different domain, you have to change hardcoding
+
 ## Setup & Development
 
 Initialize repo:
